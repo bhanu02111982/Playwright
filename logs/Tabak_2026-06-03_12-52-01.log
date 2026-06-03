@@ -1,0 +1,136 @@
+
+────────────────────────────────────────────────────────────
+  TEST START — Tabak Grouping & Split Automation (UNATTENDED)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:01.905Z] [INFO ] Log file : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-03_12-52-01.log
+[2026-06-03T07:22:01.905Z] [INFO ] Run mode : HEADLESS / UNATTENDED
+
+────────────────────────────────────────────────────────────
+  STEP 1 — Navigate to Tabak Application
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:12.834Z] [INFO ] Page loaded — title: "Auth | Login"
+
+────────────────────────────────────────────────────────────
+  STEP 2 — Login
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:12.884Z] [INFO ] Login form visible
+[2026-06-03T07:22:12.909Z] [INFO ] Email entered
+[2026-06-03T07:22:12.929Z] [INFO ] Password entered
+[2026-06-03T07:22:19.326Z] [INFO ] Login successful — URL: http://172.168.50.94/queue/file-inbox
+
+────────────────────────────────────────────────────────────
+  STEP 3 — Navigate to File Inbox Queue (process=6)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:25.972Z] [INFO ] Queue page loaded — URL: http://172.168.50.94/queue/file-inbox?process=6
+
+────────────────────────────────────────────────────────────
+  STEP 4 — Select Grouping Process from Dropdown
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:25.972Z] [INFO ] Opening Select Process dropdown...
+[2026-06-03T07:22:26.920Z] [INFO ] Grouping process selected
+[2026-06-03T07:22:28.937Z] [INFO ] URL after selection: http://172.168.50.94/queue/file-inbox?process=7
+
+────────────────────────────────────────────────────────────
+  STEP 5 — Count Files in Inbox
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:28.983Z] [INFO ] Total files in inbox: 8
+
+────────────────────────────────────────────────────────────
+  STEP 6 — Process All 8 Files (Split → Confirm Split)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:22:28.983Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:22:28.983Z] [INFO ] Processing File 1 of 8 ...
+[2026-06-03T07:22:28.993Z] [INFO ] File 1 of 8 — content: Others bulk 4 .pdf Tabak Bulk Scan 05/15/2026
+[2026-06-03T07:22:29.016Z] [INFO ] File 1 of 8 — row clicked, waiting for iframe (10 s)
+[2026-06-03T07:22:39.148Z] [INFO ] File 1 of 8 — looking for Split button in iframe
+[2026-06-03T07:22:39.176Z] [INFO ] File 1 of 8 — Split button found, clicking
+[2026-06-03T07:22:43.703Z] [INFO ] File 1 of 8 — waiting 2.5 s for Confirm Split dialog
+[2026-06-03T07:22:46.214Z] [INFO ] File 1 of 8 — total buttons on page: 3
+[2026-06-03T07:22:46.227Z] [INFO ] File 1 of 8 — Confirm Split visible (primary): true
+[2026-06-03T07:22:46.295Z] [INFO ] File 1 of 8 — Confirm Split clicked
+[2026-06-03T07:22:46.295Z] [INFO ] File 1 of 8 — Step 1: processing (3 s)
+[2026-06-03T07:22:49.305Z] [INFO ] File 1 of 8 — Step 2: operation in progress (10 s)
+[2026-06-03T07:22:59.310Z] [INFO ] File 1 of 8 — Step 3: dialog closing (4 s)
+[2026-06-03T07:23:03.320Z] [INFO ] File 1 of 8 — Step 4: file list reload (3 s)
+[2026-06-03T07:23:06.330Z] [INFO ] File 1 of 8 — split completed
+[2026-06-03T07:23:06.330Z] [INFO ] File 1 of 8 — reloading Grouping screen
+[2026-06-03T07:23:14.781Z] [INFO ] File 1 of 8 — reload complete — URL: http://172.168.50.94/queue/file-inbox?process=7
+[2026-06-03T07:23:16.800Z] [INFO ] File 1 of 8 — ready for next file
+[2026-06-03T07:23:16.800Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:23:16.800Z] [INFO ] Processing File 2 of 8 ...
+[2026-06-03T07:23:16.832Z] [INFO ] File 2 of 8 — content: 202-Pgs-bugfile2.pdf Tabak Bulk Scan 05/27/2026
+[2026-06-03T07:23:16.853Z] [INFO ] File 2 of 8 — row clicked, waiting for iframe (10 s)
+[2026-06-03T07:23:26.940Z] [INFO ] File 2 of 8 — looking for Split button in iframe
+[2026-06-03T07:23:26.967Z] [INFO ] File 2 of 8 — Split button found, clicking
+[2026-06-03T07:23:27.063Z] [INFO ] File 2 of 8 — waiting 2.5 s for Confirm Split dialog
+[2026-06-03T07:23:29.584Z] [INFO ] File 2 of 8 — total buttons on page: 3
+[2026-06-03T07:23:29.602Z] [INFO ] File 2 of 8 — Confirm Split visible (primary): true
+[2026-06-03T07:23:29.652Z] [INFO ] File 2 of 8 — Confirm Split clicked
+[2026-06-03T07:23:29.652Z] [INFO ] File 2 of 8 — Step 1: processing (3 s)
+[2026-06-03T07:23:32.666Z] [INFO ] File 2 of 8 — Step 2: operation in progress (10 s)
+[2026-06-03T07:23:42.673Z] [INFO ] File 2 of 8 — Step 3: dialog closing (4 s)
+[2026-06-03T07:23:46.681Z] [INFO ] File 2 of 8 — Step 4: file list reload (3 s)
+[2026-06-03T07:23:49.692Z] [INFO ] File 2 of 8 — split completed
+[2026-06-03T07:23:49.693Z] [INFO ] File 2 of 8 — reloading Grouping screen
+[2026-06-03T07:23:57.897Z] [INFO ] File 2 of 8 — reload complete — URL: http://172.168.50.94/queue/file-inbox?process=7
+[2026-06-03T07:23:59.911Z] [INFO ] File 2 of 8 — ready for next file
+[2026-06-03T07:23:59.912Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:23:59.912Z] [INFO ] Processing File 3 of 8 ...
+[2026-06-03T07:23:59.939Z] [INFO ] File 3 of 8 — content: Mansi testing Hritik file QA .pdf Tabak Bulk Scan 05/28/2026
+[2026-06-03T07:23:59.960Z] [INFO ] File 3 of 8 — row clicked, waiting for iframe (10 s)
+[2026-06-03T07:24:10.050Z] [INFO ] File 3 of 8 — looking for Split button in iframe
+[2026-06-03T07:24:10.078Z] [INFO ] File 3 of 8 — Split button found, clicking
+[2026-06-03T07:24:10.173Z] [INFO ] File 3 of 8 — waiting 2.5 s for Confirm Split dialog
+[2026-06-03T07:24:12.692Z] [INFO ] File 3 of 8 — total buttons on page: 3
+[2026-06-03T07:24:12.706Z] [INFO ] File 3 of 8 — Confirm Split visible (primary): true
+[2026-06-03T07:24:12.760Z] [INFO ] File 3 of 8 — Confirm Split clicked
+[2026-06-03T07:24:12.760Z] [INFO ] File 3 of 8 — Step 1: processing (3 s)
+[2026-06-03T07:24:15.766Z] [INFO ] File 3 of 8 — Step 2: operation in progress (10 s)
+[2026-06-03T07:24:25.783Z] [INFO ] File 3 of 8 — Step 3: dialog closing (4 s)
+[2026-06-03T07:24:29.791Z] [INFO ] File 3 of 8 — Step 4: file list reload (3 s)
+[2026-06-03T07:24:32.803Z] [INFO ] File 3 of 8 — split completed
+[2026-06-03T07:24:32.803Z] [INFO ] File 3 of 8 — reloading Grouping screen
+[2026-06-03T07:24:40.261Z] [INFO ] File 3 of 8 — reload complete — URL: http://172.168.50.94/queue/file-inbox?process=7
+[2026-06-03T07:24:42.275Z] [INFO ] File 3 of 8 — ready for next file
+[2026-06-03T07:24:42.275Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:24:42.275Z] [INFO ] Processing File 4 of 8 ...
+[2026-06-03T07:24:42.301Z] [INFO ] File 4 of 8 — content: kulfi (3) .pdf Tabak Bulk Scan 05/29/2026
+[2026-06-03T07:24:42.319Z] [INFO ] File 4 of 8 — row clicked, waiting for iframe (10 s)
+[2026-06-03T07:24:52.429Z] [INFO ] File 4 of 8 — looking for Split button in iframe
+[2026-06-03T07:24:52.464Z] [INFO ] File 4 of 8 — Split button found, clicking
+[2026-06-03T07:24:52.553Z] [INFO ] File 4 of 8 — waiting 2.5 s for Confirm Split dialog
+[2026-06-03T07:24:55.072Z] [INFO ] File 4 of 8 — total buttons on page: 3
+[2026-06-03T07:24:55.084Z] [INFO ] File 4 of 8 — Confirm Split visible (primary): true
+[2026-06-03T07:24:55.139Z] [INFO ] File 4 of 8 — Confirm Split clicked
+[2026-06-03T07:24:55.139Z] [INFO ] File 4 of 8 — Step 1: processing (3 s)
+[2026-06-03T07:24:58.144Z] [INFO ] File 4 of 8 — Step 2: operation in progress (10 s)
+[2026-06-03T07:25:08.154Z] [INFO ] File 4 of 8 — Step 3: dialog closing (4 s)
+[2026-06-03T07:25:12.161Z] [INFO ] File 4 of 8 — Step 4: file list reload (3 s)
+[2026-06-03T07:25:15.176Z] [INFO ] File 4 of 8 — split completed
+[2026-06-03T07:25:15.176Z] [INFO ] File 4 of 8 — reloading Grouping screen
+[2026-06-03T07:25:22.928Z] [INFO ] File 4 of 8 — reload complete — URL: http://172.168.50.94/queue/file-inbox?process=7
+[2026-06-03T07:25:24.933Z] [INFO ] File 4 of 8 — ready for next file
+[2026-06-03T07:25:24.933Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:25:24.933Z] [INFO ] Processing File 5 of 8 ...
+[2026-06-03T07:25:45.281Z] [INFO ] File 5 of 8 — content: (unreadable)
+[2026-06-03T07:25:45.286Z] [ERROR] File 5 of 8 — EXCEPTION: locator.click: Target page, context or browser has been closed
+[2026-06-03T07:25:45.289Z] [INFO ] File 5 of 8 — continuing to next file after error
+[2026-06-03T07:25:45.289Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:25:45.289Z] [INFO ] Processing File 6 of 8 ...
+[2026-06-03T07:25:45.293Z] [INFO ] File 6 of 8 — content: (unreadable)
+[2026-06-03T07:25:45.298Z] [ERROR] File 6 of 8 — EXCEPTION: locator.click: Target page, context or browser has been closed
+[2026-06-03T07:25:45.302Z] [INFO ] File 6 of 8 — continuing to next file after error
+[2026-06-03T07:25:45.302Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:25:45.302Z] [INFO ] Processing File 7 of 8 ...
+[2026-06-03T07:25:45.306Z] [INFO ] File 7 of 8 — content: (unreadable)
+[2026-06-03T07:25:45.311Z] [ERROR] File 7 of 8 — EXCEPTION: locator.click: Target page, context or browser has been closed
+[2026-06-03T07:25:45.320Z] [INFO ] File 7 of 8 — continuing to next file after error
+[2026-06-03T07:25:45.321Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:25:45.321Z] [INFO ] Processing File 8 of 8 ...
+[2026-06-03T07:25:45.328Z] [INFO ] File 8 of 8 — content: (unreadable)
+[2026-06-03T07:25:45.331Z] [ERROR] File 8 of 8 — EXCEPTION: locator.click: Target page, context or browser has been closed
+[2026-06-03T07:25:45.334Z] [INFO ] File 8 of 8 — continuing to next file after error
+
+────────────────────────────────────────────────────────────
+  STEP 7 — Post-Loop Validation
+────────────────────────────────────────────────────────────

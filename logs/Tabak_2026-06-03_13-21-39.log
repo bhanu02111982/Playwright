@@ -1,0 +1,68 @@
+
+────────────────────────────────────────────────────────────
+  TEST START — Tabak Grouping & Split Automation (UNATTENDED)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:51:39.053Z] [INFO ] Log file : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-03_13-21-39.log
+[2026-06-03T07:51:39.053Z] [INFO ] Run mode : HEADLESS / UNATTENDED
+
+────────────────────────────────────────────────────────────
+  STEP 1 — Navigate to Tabak Application
+────────────────────────────────────────────────────────────
+[2026-06-03T07:51:49.808Z] [INFO ] Page loaded — title: "Auth | Login"
+
+────────────────────────────────────────────────────────────
+  STEP 2 — Login
+────────────────────────────────────────────────────────────
+[2026-06-03T07:51:49.847Z] [INFO ] Login form visible
+[2026-06-03T07:51:49.869Z] [INFO ] Email entered
+[2026-06-03T07:51:49.890Z] [INFO ] Password entered
+[2026-06-03T07:51:55.438Z] [INFO ] Login successful — URL: http://172.168.50.94/queue/file-inbox
+
+────────────────────────────────────────────────────────────
+  STEP 3 — Navigate to File Inbox Queue (process=6)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:52:02.422Z] [INFO ] Queue page loaded — URL: http://172.168.50.94/queue/file-inbox?process=6
+
+────────────────────────────────────────────────────────────
+  STEP 4 — Select Grouping Process from Dropdown
+────────────────────────────────────────────────────────────
+[2026-06-03T07:52:02.422Z] [INFO ] Opening Select Process dropdown...
+[2026-06-03T07:52:03.393Z] [INFO ] Grouping process selected
+[2026-06-03T07:52:05.406Z] [INFO ] URL after selection: http://172.168.50.94/queue/file-inbox?process=7
+
+────────────────────────────────────────────────────────────
+  STEP 5 — Count Files in Inbox
+────────────────────────────────────────────────────────────
+[2026-06-03T07:52:05.454Z] [INFO ] Total files in inbox: 2
+
+────────────────────────────────────────────────────────────
+  STEP 6 — Process All 2 Files (Split → Confirm Split)
+────────────────────────────────────────────────────────────
+[2026-06-03T07:52:05.455Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:52:05.455Z] [INFO ] Processing File 1 of 2 ...
+[2026-06-03T07:52:05.467Z] [INFO ] File 1 of 2 — content: twentynine(10) .pdf Tabak Bulk Scan 05/28/2026
+[2026-06-03T07:52:05.489Z] [INFO ] File 1 of 2 — row clicked, waiting for iframe (10 s)
+[2026-06-03T07:52:15.651Z] [INFO ] File 1 of 2 — looking for Split button in iframe
+[2026-06-03T07:52:15.680Z] [INFO ] File 1 of 2 — Split button found, clicking
+[2026-06-03T07:52:15.735Z] [INFO ] File 1 of 2 — waiting 2.5 s for Confirm Split dialog
+[2026-06-03T07:52:18.258Z] [INFO ] File 1 of 2 — total buttons on page: 3
+[2026-06-03T07:52:18.267Z] [INFO ] File 1 of 2 — Confirm Split visible (primary): true
+[2026-06-03T07:52:18.336Z] [INFO ] File 1 of 2 — Confirm Split clicked
+[2026-06-03T07:52:18.337Z] [INFO ] File 1 of 2 — Step 1: processing (3 s)
+[2026-06-03T07:52:21.352Z] [INFO ] File 1 of 2 — Step 2: operation in progress (10 s)
+[2026-06-03T07:52:31.369Z] [INFO ] File 1 of 2 — Step 3: dialog closing (4 s)
+[2026-06-03T07:52:35.384Z] [INFO ] File 1 of 2 — Step 4: file list reload (3 s)
+[2026-06-03T07:52:38.409Z] [INFO ] File 1 of 2 — split completed
+[2026-06-03T07:52:38.409Z] [INFO ] File 1 of 2 — reloading Grouping screen
+[2026-06-03T07:52:47.041Z] [INFO ] File 1 of 2 — reload complete — URL: http://172.168.50.94/queue/file-inbox?process=7
+[2026-06-03T07:52:49.054Z] [INFO ] File 1 of 2 — ready for next file
+[2026-06-03T07:52:49.055Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-03T07:52:49.055Z] [INFO ] Processing File 2 of 2 ...
+[2026-06-03T07:53:40.764Z] [INFO ] File 2 of 2 — content: (unreadable)
+[2026-06-03T07:53:40.785Z] [ERROR] File 2 of 2 — EXCEPTION: locator.click: Target page, context or browser has been closed
+[2026-06-03T07:53:40.787Z] [INFO ] File 2 of 2 — continuing to next file after error
+
+────────────────────────────────────────────────────────────
+  STEP 7 — Select Classification Process and Add First File to Query
+────────────────────────────────────────────────────────────
+[2026-06-03T07:53:40.787Z] [INFO ] Opening Process dropdown to select classification process

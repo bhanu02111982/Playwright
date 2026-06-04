@@ -236,14 +236,14 @@ test('Login and Validate File Grouping and Classification by Process',
       logger.info('First file on Classification screen selected');
       await page.waitForTimeout(2000);
 
-      logger.info('Opening Select query item dropdown');
-      let queryDropdown = page.locator('label:has-text("Select query item"), label:has-text("Query item")')
+      logger.info('Opening Select query item(s) dropdown');
+      let queryDropdown = page.locator('label:has-text("Select query item(s)"), label:has-text("Select query item"), label:has-text("Query item")')
         .locator('..')
         .locator('mat-select, select')
         .first();
 
       if (!(await queryDropdown.count())) {
-        queryDropdown = page.locator('mat-select, select').filter({ hasText: /Select query item|Query item|Add to query/i }).first();
+        queryDropdown = page.locator('mat-select, select').filter({ hasText: /Select query item\(s\)|Select query item|Query item|Add to query/i }).first();
       }
 
       if (await queryDropdown.isVisible({ timeout: 5000 }).catch(() => false)) {
@@ -420,14 +420,14 @@ test('Login and Validate File Grouping and Classification by Process',
         logWarn('First file row not visible on classification screen');
       }
 
-      logger.info('Opening Add to query dropdown');
-      let addToQueryDropdown = page.locator('label:has-text("Add to query"), label:has-text("Add to Query")')
+      logger.info('Opening Select query item(s) dropdown');
+      let addToQueryDropdown = page.locator('label:has-text("Select query item(s)"), label:has-text("Select query item"), label:has-text("Query item"), label:has-text("Add to query"), label:has-text("Add to Query")')
         .locator('..')
         .locator('mat-select, select')
         .first();
 
       if (!(await addToQueryDropdown.count())) {
-        addToQueryDropdown = page.locator('mat-select, select').filter({ hasText: /Add to query|Add to Query|Query/i }).first();
+        addToQueryDropdown = page.locator('mat-select, select').filter({ hasText: /Select query item\(s\)|Select query item|Query item|Add to query|Add to Query|Query/i }).first();
       }
 
       if (await addToQueryDropdown.isVisible({ timeout: 5000 }).catch(() => false)) {
@@ -436,12 +436,12 @@ test('Login and Validate File Grouping and Classification by Process',
         const addToQueryOption = page.locator('mat-option, [role="option"]').first();
         if (await addToQueryOption.isVisible({ timeout: 5000 }).catch(() => false)) {
           await addToQueryOption.click();
-          logger.info('Selected first Add to query option');
+          logger.info('Selected first Select query item(s) option');
         } else {
-          logWarn('No option visible in Add to query dropdown');
+          logWarn('No option visible in Select query item(s) dropdown');
         }
       } else {
-        logWarn('Add to query dropdown not found');
+        logWarn('Select query item(s) dropdown not found');
       }
 
       const addToQueryButton = page.locator('button:has-text("Add to query"), button:has-text("Add to Query")').first();

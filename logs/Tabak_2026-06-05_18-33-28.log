@@ -1,0 +1,86 @@
+
+────────────────────────────────────────────────────────────
+  TEST START — Tabak Grouping & Split Automation (UNATTENDED)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:28.653Z] [INFO ] Log file : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-05_18-33-28.log
+[2026-06-05T13:03:28.654Z] [INFO ] Run mode : HEADLESS / UNATTENDED
+
+────────────────────────────────────────────────────────────
+  STEP 1 — Navigate to Tabak Application
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:39.593Z] [INFO ] Page loaded — title: "Auth | Login"
+
+────────────────────────────────────────────────────────────
+  STEP 2 — Login
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:39.647Z] [INFO ] Login form visible
+[2026-06-05T13:03:39.676Z] [INFO ] Email entered
+[2026-06-05T13:03:39.696Z] [INFO ] Password entered
+[2026-06-05T13:03:45.442Z] [INFO ] Login successful — URL: http://172.168.50.94/queue/file-inbox
+
+────────────────────────────────────────────────────────────
+  STEP 3 — Navigate to File Inbox Queue (process=6)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:51.639Z] [INFO ] Queue page loaded — URL: http://172.168.50.94/queue/file-inbox?process=6
+
+────────────────────────────────────────────────────────────
+  STEP 4 — Select Grouping Process from Dropdown
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:52.586Z] [INFO ] Grouping process selected
+[2026-06-05T13:03:54.097Z] [INFO ] URL after selection: http://172.168.50.94/queue/file-inbox?process=7
+
+────────────────────────────────────────────────────────────
+  STEP 5 — Count Files in Inbox
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:54.156Z] [INFO ] Total files in inbox: 1
+
+────────────────────────────────────────────────────────────
+  STEP 6 — Process All 1 Files (Split → Confirm Split)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:03:54.157Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-05T13:03:54.157Z] [INFO ] Processing File 1 of 1 ...
+[2026-06-05T13:03:54.170Z] [INFO ] File 1 of 1 — content: Testing Mayank file blank QA .pdf Tabak Bulk Scan 53 second ago
+[2026-06-05T13:03:54.190Z] [INFO ] File 1 of 1 — row clicked, waiting for iframe (10 s)
+[2026-06-05T13:04:04.277Z] [INFO ] File 1 of 1 — looking for Split button in iframe
+[2026-06-05T13:04:04.297Z] [WARN ] File 1 of 1 — Split button NOT found — skipping file
+
+────────────────────────────────────────────────────────────
+  STEP 7 — Select Classification Process and Add First File to Query
+────────────────────────────────────────────────────────────
+[2026-06-05T13:04:04.301Z] [INFO ] Selecting Classification process
+[2026-06-05T13:04:05.264Z] [INFO ] Classification process selected
+[2026-06-05T13:04:09.452Z] [INFO ] Selecting first file in classification screen
+[2026-06-05T13:04:12.192Z] [INFO ] First file selected
+[2026-06-05T13:04:12.304Z] [WARN ] Select query item(s) dropdown not found
+[2026-06-05T13:04:12.321Z] [WARN ] Save button not found
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Post-Loop Validation
+────────────────────────────────────────────────────────────
+[2026-06-05T13:04:12.322Z] [WARN ] Page is no longer alive before final validation — skipping title/url assertions
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Final Screenshot
+────────────────────────────────────────────────────────────
+[2026-06-05T13:04:12.322Z] [WARN ] Page closed before final screenshot — skipping screenshot capture
+[2026-06-05T13:04:12.322Z] [INFO ] Test execution complete
+
+════════════════════════════════════════════════════════════
+  TABAK TEST RUN SUMMARY
+════════════════════════════════════════════════════════════
+  Log file      : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-05_18-33-28.log
+  Run date/time : 6/5/2026, 6:33:28 PM
+  Total files   : 1
+  Errors logged : 2
+  INFO lines    : 21
+  WARN lines    : 5
+  ERROR lines   : 0
+  Elapsed       : 43.7 s
+
+  ── ERROR DETAILS ──────────────────────────────────────
+  [1] File 1 of 1 — Split button NOT found — skipping file
+  [2] Save button not found
+
+  RESULT : ⚠ COMPLETED WITH ERRORS
+════════════════════════════════════════════════════════════
+

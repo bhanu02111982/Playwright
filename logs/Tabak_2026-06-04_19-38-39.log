@@ -1,0 +1,103 @@
+
+────────────────────────────────────────────────────────────
+  TEST START — Tabak Grouping & Split Automation (UNATTENDED)
+────────────────────────────────────────────────────────────
+[2026-06-04T14:08:39.318Z] [INFO ] Log file : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-04_19-38-39.log
+[2026-06-04T14:08:39.318Z] [INFO ] Run mode : HEADLESS / UNATTENDED
+
+────────────────────────────────────────────────────────────
+  STEP 1 — Navigate to Tabak Application
+────────────────────────────────────────────────────────────
+[2026-06-04T14:09:15.628Z] [INFO ] Page loaded — title: "Auth | Login"
+
+────────────────────────────────────────────────────────────
+  STEP 2 — Login
+────────────────────────────────────────────────────────────
+[2026-06-04T14:09:32.261Z] [INFO ] Login form visible
+[2026-06-04T14:09:40.425Z] [INFO ] Email entered
+[2026-06-04T14:09:44.527Z] [INFO ] Password entered
+[2026-06-04T14:09:56.453Z] [INFO ] Login successful — URL: http://172.168.50.94/queue/file-inbox
+
+────────────────────────────────────────────────────────────
+  STEP 3 — Navigate to File Inbox Queue (process=6)
+────────────────────────────────────────────────────────────
+[2026-06-04T14:10:10.956Z] [INFO ] Queue page loaded — URL: http://172.168.50.94/queue/file-inbox?process=6
+
+────────────────────────────────────────────────────────────
+  STEP 4 — Select Grouping Process from Dropdown
+────────────────────────────────────────────────────────────
+[2026-06-04T14:10:10.957Z] [INFO ] Opening Select Process dropdown...
+[2026-06-04T14:10:24.920Z] [INFO ] Grouping process selected
+[2026-06-04T14:10:26.937Z] [INFO ] URL after selection: http://172.168.50.94/queue/file-inbox?process=7
+
+────────────────────────────────────────────────────────────
+  STEP 5 — Count Files in Inbox
+────────────────────────────────────────────────────────────
+[2026-06-04T14:10:34.955Z] [WARN ] File list selector not found — inbox may be empty
+[2026-06-04T14:10:42.616Z] [INFO ] Total files in inbox: 0
+[2026-06-04T14:10:42.616Z] [WARN ] No files found on Grouping screen — switching to Classification process
+[2026-06-04T14:10:51.519Z] [INFO ] Classification process selected from dropdown
+[2026-06-04T14:11:04.520Z] [INFO ] First file on Classification screen selected
+[2026-06-04T14:11:06.533Z] [INFO ] Opening Select query item(s) dropdown
+[2026-06-04T14:11:25.003Z] [WARN ] Select query item dropdown not found
+[2026-06-04T14:11:27.601Z] [WARN ] Add to Query button not found
+
+────────────────────────────────────────────────────────────
+  STEP 6 — Process All 0 Files (Split → Confirm Split)
+────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────
+  STEP 7 — Select Classification Process and Add First File to Query
+────────────────────────────────────────────────────────────
+[2026-06-04T14:11:27.601Z] [INFO ] Opening Process dropdown to select classification process
+[2026-06-04T14:11:42.526Z] [INFO ] Classification process selected
+[2026-06-04T14:11:45.541Z] [INFO ] Selecting first file in classification screen
+[2026-06-04T14:11:50.231Z] [INFO ] First file selected
+[2026-06-04T14:11:50.231Z] [INFO ] Opening Select query item(s) dropdown
+[2026-06-04T14:11:51.447Z] [ERROR] Browser page error: Worker was terminated
+[2026-06-04T14:12:07.896Z] [WARN ] Select query item(s) dropdown not found
+[2026-06-04T14:12:09.066Z] [WARN ] Add to query button not found
+[2026-06-04T14:12:10.194Z] [WARN ] Save button not found
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Post-Loop Validation
+────────────────────────────────────────────────────────────
+[2026-06-04T14:12:12.206Z] [INFO ] Page title: "File Inbox"
+[2026-06-04T14:12:12.208Z] [INFO ] Final URL: http://172.168.50.94/queue/file-inbox?process=6
+[2026-06-04T14:12:12.208Z] [WARN ] URL VALIDATION — "process=7" not found in: http://172.168.50.94/queue/file-inbox?process=6
+[2026-06-04T14:12:12.214Z] [WARN ] Final validation skipped due to page closure or navigation error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected substring: [32m"process=7"[39m
+Received string:    [31m"http://172.168.50.94/queue/file-inbox?process=6"[39m
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Final Screenshot
+────────────────────────────────────────────────────────────
+[2026-06-04T14:12:45.211Z] [INFO ] Final screenshot saved: screenshots/tabak-completed.png
+[2026-06-04T14:12:45.211Z] [INFO ] Test execution complete
+
+════════════════════════════════════════════════════════════
+  TABAK TEST RUN SUMMARY
+════════════════════════════════════════════════════════════
+  Log file      : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-04_19-38-39.log
+  Run date/time : 6/4/2026, 7:38:39 PM
+  Total files   : 0
+  Errors logged : 8
+  INFO lines    : 24
+  WARN lines    : 9
+  ERROR lines   : 1
+  Elapsed       : 245.9 s
+
+  ── ERROR DETAILS ──────────────────────────────────────
+  [1] File list selector not found — inbox may be empty
+  [2] No files found on Grouping screen — switching to Classification process
+  [3] Select query item dropdown not found
+  [4] Add to Query button not found
+  [5] Select query item(s) dropdown not found
+  [6] Add to query button not found
+  [7] Save button not found
+  [8] URL VALIDATION — "process=7" not found in: http://172.168.50.94/queue/file-inbox?process=6
+
+  RESULT : ⚠ COMPLETED WITH ERRORS
+════════════════════════════════════════════════════════════
+

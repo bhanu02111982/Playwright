@@ -1,0 +1,102 @@
+
+────────────────────────────────────────────────────────────
+  TEST START — Tabak Grouping & Split Automation (UNATTENDED)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:04.570Z] [INFO ] Log file : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-05_18-36-04.log
+[2026-06-05T13:06:04.570Z] [INFO ] Run mode : HEADLESS / UNATTENDED
+
+────────────────────────────────────────────────────────────
+  STEP 1 — Navigate to Tabak Application
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:15.426Z] [INFO ] Page loaded — title: "Auth | Login"
+
+────────────────────────────────────────────────────────────
+  STEP 2 — Login
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:15.475Z] [INFO ] Login form visible
+[2026-06-05T13:06:15.499Z] [INFO ] Email entered
+[2026-06-05T13:06:15.521Z] [INFO ] Password entered
+[2026-06-05T13:06:21.219Z] [INFO ] Login successful — URL: http://172.168.50.94/queue/file-inbox
+
+────────────────────────────────────────────────────────────
+  STEP 3 — Navigate to File Inbox Queue (process=6)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:28.817Z] [INFO ] Queue page loaded — URL: http://172.168.50.94/queue/file-inbox?process=6
+
+────────────────────────────────────────────────────────────
+  STEP 4 — Select Grouping Process from Dropdown
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:29.772Z] [INFO ] Grouping process selected
+[2026-06-05T13:06:31.282Z] [INFO ] URL after selection: http://172.168.50.94/queue/file-inbox?process=7
+
+────────────────────────────────────────────────────────────
+  STEP 5 — Count Files in Inbox
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:31.313Z] [INFO ] Total files in inbox: 1
+[2026-06-05T13:06:31.314Z] [WARN ] Only one file found on Grouping screen — switching to Classification process
+[2026-06-05T13:06:32.231Z] [INFO ] Classification process selected
+[2026-06-05T13:06:35.773Z] [INFO ] Total files on Classification screen: 100
+
+────────────────────────────────────────────────────────────
+  STEP 6 — Process All 100 Files (Split → Confirm Split)
+────────────────────────────────────────────────────────────
+[2026-06-05T13:06:35.773Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-05T13:06:35.773Z] [INFO ] Processing File 1 of 100 ...
+[2026-06-05T13:06:35.790Z] [INFO ] File 1 of 100 — content: NOME_Reminder----abhinav_multiple_address_SSA_Rayan_0 EDDIE D TRAHAN 04/30/2026
+[2026-06-05T13:06:35.818Z] [INFO ] File 1 of 100 — row clicked, waiting for iframe (10 s)
+[2026-06-05T13:06:45.932Z] [INFO ] File 1 of 100 — looking for Split button in iframe
+[2026-06-05T13:06:45.960Z] [WARN ] File 1 of 100 — Split button NOT found — skipping file
+[2026-06-05T13:06:45.960Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-05T13:06:45.960Z] [INFO ] Processing File 2 of 100 ...
+[2026-06-05T13:06:45.970Z] [INFO ] File 2 of 100 — content: NOME_Reminder----abhinav_multiple_address_SSA_Rayan_3 EDWARD MARTINEZ 04/30/2026
+[2026-06-05T13:06:45.991Z] [INFO ] File 2 of 100 — row clicked, waiting for iframe (10 s)
+[2026-06-05T13:06:56.096Z] [INFO ] File 2 of 100 — looking for Split button in iframe
+[2026-06-05T13:06:56.136Z] [WARN ] File 2 of 100 — Split button NOT found — skipping file
+[2026-06-05T13:06:56.144Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-05T13:06:56.144Z] [INFO ] Processing File 3 of 100 ...
+[2026-06-05T13:06:56.171Z] [INFO ] File 3 of 100 — content: NOME_Reminder----abhinav_multiple_address_SSA_Rayan_4 PAMELA DAHMS 04/30/2026
+[2026-06-05T13:06:56.214Z] [INFO ] File 3 of 100 — row clicked, waiting for iframe (10 s)
+[2026-06-05T13:06:59.438Z] [ERROR] Browser page error: Worker was terminated
+[2026-06-05T13:07:06.328Z] [INFO ] File 3 of 100 — looking for Split button in iframe
+[2026-06-05T13:07:06.351Z] [WARN ] File 3 of 100 — Split button NOT found — skipping file
+[2026-06-05T13:07:06.351Z] [INFO ] ──────────────────────────────────────────────────
+[2026-06-05T13:07:06.351Z] [INFO ] Processing File 4 of 100 ...
+[2026-06-05T13:07:06.361Z] [INFO ] File 4 of 100 — content: NOME_Reminder----abhinav_multiple_address_SSA_Rayan_5 KEITH FOSTER 04/30/2026
+[2026-06-05T13:07:06.383Z] [INFO ] File 4 of 100 — row clicked, waiting for iframe (10 s)
+[2026-06-05T13:07:08.447Z] [ERROR] File 4 of 100 — EXCEPTION: page.waitForTimeout: Target page, context or browser has been closed
+[2026-06-05T13:07:08.454Z] [ERROR] Page closed during processing — aborting remaining files
+[2026-06-05T13:07:08.454Z] [WARN ] Page is no longer alive before STEP 7 — skipping classification/add-to-query actions
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Post-Loop Validation
+────────────────────────────────────────────────────────────
+[2026-06-05T13:07:08.454Z] [WARN ] Page is no longer alive before final validation — skipping title/url assertions
+
+────────────────────────────────────────────────────────────
+  STEP 8 — Final Screenshot
+────────────────────────────────────────────────────────────
+[2026-06-05T13:07:08.454Z] [WARN ] Page closed before final screenshot — skipping screenshot capture
+[2026-06-05T13:07:08.454Z] [INFO ] Test execution complete
+
+════════════════════════════════════════════════════════════
+  TABAK TEST RUN SUMMARY
+════════════════════════════════════════════════════════════
+  Log file      : C:\Users\abhinav.kaushik\OneDrive - Provana India Pvt. Ltd\Desktop\PRA\documents_upload\playwright-project\tests\logs\Tabak_2026-06-05_18-36-04.log
+  Run date/time : 6/5/2026, 6:36:04 PM
+  Total files   : 100
+  Errors logged : 5
+  INFO lines    : 33
+  WARN lines    : 7
+  ERROR lines   : 3
+  Elapsed       : 63.9 s
+
+  ── ERROR DETAILS ──────────────────────────────────────
+  [1] Only one file found on Grouping screen — switching to Classification process
+  [2] File 1 of 100 — Split button NOT found — skipping file
+  [3] File 2 of 100 — Split button NOT found — skipping file
+  [4] File 3 of 100 — Split button NOT found — skipping file
+  [5] File 4 of 100 — EXCEPTION: page.waitForTimeout: Target page, context or browser has been closed
+
+  RESULT : ⚠ COMPLETED WITH ERRORS
+════════════════════════════════════════════════════════════
+
